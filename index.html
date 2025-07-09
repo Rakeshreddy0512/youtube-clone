@@ -128,19 +128,17 @@
         }
 
         .sidebar-design {
+            position: fixed;
+            top: 55px;
             left: 0;
             bottom: 0;
-            top: 55px;
-            background-color: white;
             width: 70px;
-            position: fixed;
-            border-right-width: 1px;
-            border-right-style: solid;
-            border-right-color: rgb(225, 224, 224);
+            background-color: white;
+            border-right: 1px solid rgb(225, 224, 224);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
+            padding-top: 10px;
         }
 
         .home-icon,
@@ -150,13 +148,7 @@
         .youtube-music-icon,
         .library-icon {
             height: 26px;
-            margin-left: 25px;
-            margin-top: 10px;
             margin-bottom: 28px;
-        }
-
-        .home-icon {
-            margin-top: 14px;
         }
 
         p {
@@ -219,38 +211,36 @@
     </style>
 </head>
 <body> 
-        <div class="header">
-            <div class="left-section">
-                <img class="hamburger-menu" src="hamburger-menu.svg">
-                <img  class="youtube-logo" src="youtube-logo.svg">
-            </div>
-            <div class="middel-section">
-                <input class="search-bar" type="text" placeholder="search">
-                <button class="search-button" >
-                    <img class="search-icon" src="search.svg">
-
-                </button>
-                <button class=" voice-search-button" >
-                    <img class= "voice-search-icon"  src="voice-search-icon.svg">
-                </button>
-
-            </div>
-            <div class="right-section">
-                <img class="upload-icon" src="upload.svg">
-                <img  class="youtube-apps-icon" src="youtube-apps.svg">
-                <img class="notifications-icon" src="notifications.svg">
-                <img class="current-user-picture" src="my-channel.jpeg">
-            </div>
-            
+    <div class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="hamburger-menu.svg">
+            <img class="youtube-logo" src="youtube-logo.svg">
         </div>
-        <div class="sidebar-design">
-            <img class="home-icon" src="home.svg">
-            <img class="explore-icon" src="explore.svg">
-            <img class="subscriptions-icon" src="subscriptions.svg">
-            <img class="originals-icon" src="originals.svg">
-            <img class="youtube-music-icon" src="youtube-music.svg">
-            <img class="library-icon" src="library.svg">
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="search">
+            <button class="search-button">
+                <img class="search-icon" src="search.svg">
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="voice-search-icon.svg">
+            </button>
         </div>
+        <div class="right-section">
+            <img class="upload-icon" src="upload.svg">
+            <img class="youtube-apps-icon" src="youtube-apps.svg">
+            <img class="notifications-icon" src="notifications.svg">
+            <img class="current-user-picture" src="my-channel.jpeg">
+        </div>
+    </div>
+
+    <div class="sidebar-design">
+        <img class="home-icon" src="home.svg">
+        <img class="explore-icon" src="explore.svg">
+        <img class="subscriptions-icon" src="subscriptions.svg">
+        <img class="originals-icon" src="originals.svg">
+        <img class="youtube-music-icon" src="youtube-music.svg">
+        <img class="library-icon" src="library.svg">
+    </div>
 
 
         <div class="video-grid">
